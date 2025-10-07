@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://example.com/app1.png",
+    "title": "TaskFlow",
+    "companyName": "NextGen Studios",
+    "id": 1,
+    "description": "Organize your day efficiently with smart reminders and task prioritization.",
+    "size": 42,
+    "reviews": 1287,
+    "ratingAvg": 4.3,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 54 },
+      { "name": "2 star", "count": 103 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 430 }
+    ]
+  },
+  {
+    "image": "https://example.com/app2.png",
+    "title": "FitBuddy",
+    "companyName": "ActiveLife Co.",
+    "id": 2,
+    "description": "Track your workouts, calories, and progress with AI-powered fitness insights.",
+    "size": 59,
+    "reviews": 2310,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 102 },
+      { "name": "2 star", "count": 143 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1185 }
+    ]
+  },
+  {
+    "image": "https://example.com/app3.png",
+    "title": "NoteMaster",
+    "companyName": "PixelWorks",
+    "id": 3,
+    "description": "Capture ideas quickly with audio notes, handwriting, and cloud sync.",
+    "size": 33,
+    "reviews": 856,
+    "ratingAvg": 4.1,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 64 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 272 }
+    ]
+  },
+  {
+    "image": "https://example.com/app4.png",
+    "title": "PhotoVerse",
+    "companyName": "DreamLens Labs",
+    "id": 4,
+    "description": "AI-enhanced photo editing with one-tap filters and background removal.",
+    "size": 78,
+    "reviews": 5421,
+    "ratingAvg": 4.7,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 211 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3460 }
+    ]
+  },
+  {
+    "image": "https://example.com/app5.png",
+    "title": "BudgetWise",
+    "companyName": "FinTech Labs",
+    "id": 5,
+    "description": "Manage expenses, set budgets, and analyze spending trends with ease.",
+    "size": 40,
+    "reviews": 1760,
+    "ratingAvg": 4.5,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 540 },
+      { "name": "5 star", "count": 830 }
+    ]
+  },
+  {
+    "image": "https://example.com/app6.png",
+    "title": "Weatherly",
+    "companyName": "CloudSync Ltd.",
+    "id": 6,
+    "description": "Accurate weather forecasts with real-time radar and alerts.",
+    "size": 29,
+    "reviews": 2980,
+    "ratingAvg": 4.4,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 890 },
+      { "name": "5 star", "count": 1410 }
+    ]
+  },
+  {
+    "image": "https://example.com/app7.png",
+    "title": "SoundScape",
+    "companyName": "WaveTech Studios",
+    "id": 7,
+    "description": "Relaxing ambient sounds and sleep music to help you unwind.",
+    "size": 52,
+    "reviews": 1912,
+    "ratingAvg": 4.8,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 1142 }
+    ]
+  },
+  {
+    "image": "https://example.com/app8.png",
+    "title": "Learnify",
+    "companyName": "EduSmart Technologies",
+    "id": 8,
+    "description": "Interactive lessons and quizzes to learn anything at your own pace.",
+    "size": 61,
+    "reviews": 4820,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 660 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2420 }
+    ]
+  },
+  {
+    "image": "https://example.com/app9.png",
+    "title": "CityMap Go",
+    "companyName": "UrbanTech Solutions",
+    "id": 9,
+    "description": "Navigate cities offline with live traffic updates and local tips.",
+    "size": 85,
+    "reviews": 3910,
+    "ratingAvg": 4.2,
+    "downloads": 3800000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1830 }
+    ]
+  },
+  {
+    "image": "https://example.com/app10.png",
+    "title": "GameBoost",
+    "companyName": "Velocity Works",
+    "id": 10,
+    "description": "Optimize your mobile performance and reduce lag while gaming.",
+    "size": 44,
+    "reviews": 2450,
+    "ratingAvg": 4.3,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 140 },
+      { "name": "2 star", "count": 170 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 1110 }
+    ]
+  },
+  {
+    "image": "https://example.com/app11.png",
+    "title": "MealMate",
+    "companyName": "TasteTech",
+    "id": 11,
+    "description": "Discover personalized recipes based on your ingredients and preferences.",
+    "size": 57,
+    "reviews": 2120,
+    "ratingAvg": 4.5,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "https://example.com/app12.png",
+    "title": "SecureVault",
+    "companyName": "LockChain Inc.",
+    "id": 12,
+    "description": "Keep your passwords, notes, and documents encrypted and secure.",
+    "size": 39,
+    "reviews": 1890,
+    "ratingAvg": 4.7,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 1060 }
+    ]
+  },
+  {
+    "image": "https://example.com/app13.png",
+    "title": "MindEase",
+    "companyName": "CalmWave Studios",
+    "id": 13,
+    "description": "Guided meditation and breathing exercises for stress relief.",
+    "size": 48,
+    "reviews": 3380,
+    "ratingAvg": 4.8,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://example.com/app14.png",
+    "title": "Shoply",
+    "companyName": "RetailX Ltd.",
+    "id": 14,
+    "description": "Compare prices, track discounts, and shop smarter across platforms.",
+    "size": 62,
+    "reviews": 2980,
+    "ratingAvg": 4.2,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 510 },
+      { "name": "4 star", "count": 920 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "image": "https://example.com/app15.png",
+    "title": "TripNest",
+    "companyName": "FlyEasy Travels",
+    "id": 15,
+    "description": "Plan trips, book hotels, and explore hidden gems around the world.",
+    "size": 75,
+    "reviews": 3210,
+    "ratingAvg": 4.6,
+    "downloads": 3300000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1440 }
+    ]
+  },
+  {
+    "image": "https://example.com/app16.png",
+    "title": "DocuScan",
+    "companyName": "SmartOffice Co.",
+    "id": 16,
+    "description": "Turn your phone into a portable scanner with OCR text extraction.",
+    "size": 37,
+    "reviews": 2760,
+    "ratingAvg": 4.5,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 110 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 330 },
+      { "name": "4 star", "count": 780 },
+      { "name": "5 star", "count": 1400 }
+    ]
+  },
+  {
+    "image": "https://example.com/app17.png",
+    "title": "CryptoPulse",
+    "companyName": "BlockChainX",
+    "id": 17,
+    "description": "Track live crypto prices, portfolios, and market analytics in real time.",
+    "size": 54,
+    "reviews": 4120,
+    "ratingAvg": 4.3,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 970 },
+      { "name": "5 star", "count": 2190 }
+    ]
+  },
+  {
+    "image": "https://example.com/app18.png",
+    "title": "LangBridge",
+    "companyName": "LinguaTech",
+    "id": 18,
+    "description": "Instant translations, offline dictionaries, and language learning tools.",
+    "size": 66,
+    "reviews": 3120,
+    "ratingAvg": 4.4,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1470 }
+    ]
+  },
+  {
+    "image": "https://example.com/app19.png",
+    "title": "MusicNest",
+    "companyName": "HarmonyWorks",
+    "id": 19,
+    "description": "Stream, download, and share your favorite songs with smart playlists.",
+    "size": 88,
+    "reviews": 5520,
+    "ratingAvg": 4.6,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 3170 }
+    ]
+  },
+  {
+    "image": "https://example.com/app20.png",
+    "title": "HealthSync",
+    "companyName": "WellLife Systems",
+    "id": 20,
+    "description": "Sync your fitness tracker, monitor heart rate, and improve your lifestyle.",
+    "size": 50,
+    "reviews": 2680,
+    "ratingAvg": 4.5,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 740 },
+      { "name": "5 star", "count": 1390 }
+    ]
+  }
+]

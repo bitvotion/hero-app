@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/Z17vdr9q/taskflow.png",
+    "title": "TaskFlow",
+    "companyName": "Zenova Labs",
+    "id": 1,
+    "description": "TaskFlow is a productivity companion designed to help you organize projects, tasks, and personal goals with unmatched simplicity. The app features customizable boards, subtasks, and reminders to ensure that nothing slips through the cracks. You can switch between list view or Kanban mode for better visualization. With smart notifications and a clean interface, TaskFlow adapts to your workflow and keeps distractions away. Whether you’re planning your week or managing a small team, its analytics section tracks your performance and offers useful insights. It also supports cloud sync, dark mode, and offline access, giving you control and flexibility over your daily tasks anywhere, anytime.",
+    "size": 41.2,
+    "reviews": 12400,
+    "ratingAvg": 4.5,
+    "downloads": 220000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 590 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 9370 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xSQkKjdH/snapedit.png",
+    "title": "SnapEdit Studio",
+    "companyName": "Lunetic Softworks",
+    "id": 2,
+    "description": "SnapEdit Studio brings advanced photo editing tools to everyone. It combines AI-powered enhancements with manual controls to let users achieve their perfect look. You can remove blemishes, apply cinematic filters, and adjust colors with precision. Its automatic object removal and sky replacement tools make creative edits quick and fun. The app also supports layer-based editing for professionals who want more control. SnapEdit’s export options let you save in multiple formats and share directly to social media. Designed for speed and simplicity, it turns your mobile device into a compact editing powerhouse without sacrificing image quality or artistic freedom.",
+    "size": 76.8,
+    "reviews": 38200,
+    "ratingAvg": 4.3,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1900 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 26800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Q7SSC1CM/mindwave.png",
+    "title": "MindWave",
+    "companyName": "NeuralPoint Technologies",
+    "id": 3,
+    "description": "MindWave is your personal mindfulness coach that helps you relax and refocus throughout the day. With scientifically backed meditation exercises and mood tracking, it tailors sessions to your emotional needs. Each session is guided by calming sounds and breathing rhythms, helping users reduce anxiety and improve sleep. The app includes daily reflection journals and visual progress charts that encourage consistency. Whether you are new to meditation or an experienced practitioner, MindWave adapts to your pace. Its AI assistant recommends personalized activities to enhance calmness, mental strength, and emotional resilience — all in one beautifully designed, distraction-free app.",
+    "size": 59.7,
+    "reviews": 9100,
+    "ratingAvg": 4.7,
+    "downloads": 180000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 880 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 7700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/GfkCMPd6/habitline.png",
+    "title": "HabitLine",
+    "companyName": "Aurora Labs",
+    "id": 4,
+    "description": "HabitLine is a sleek habit tracker designed to make consistency rewarding. Its visual timeline grows with each success, motivating you to stay on track. You can set daily, weekly, or flexible routines for personal growth, productivity, or health goals. The app includes reminders, habit streak analytics, and community challenges. Users can also add notes to reflect on their journey and celebrate milestones. With its minimalist interface, HabitLine makes building good habits feel natural and fun. Whether you’re aiming to read more, drink water, or learn a new skill, HabitLine turns small actions into big achievements effortlessly.",
+    "size": 44.5,
+    "reviews": 16300,
+    "ratingAvg": 4.6,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 690 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4800 },
+      { "name": "5 star", "count": 11800 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LXgcNYgw/voxtalk.png",
+    "title": "VoxTalk",
+    "companyName": "Wavefront Media",
+    "id": 5,
+    "description": "VoxTalk redefines social interaction through voice. Instead of typing, users share short audio clips to express their opinions, jokes, or stories. The app automatically cleans up background noise and equalizes volume, ensuring clear and crisp playback. You can follow creators, reply with your own voice notes, and join public discussions on trending topics. VoxTalk’s AI feed suggests people with similar interests, helping you build authentic audio connections. It’s not just another social app — it’s an auditory experience that celebrates personality, emotion, and storytelling in the most natural way possible.",
+    "size": 93.4,
+    "reviews": 25100,
+    "ratingAvg": 4.2,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 7100 },
+      { "name": "5 star", "count": 10400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/KSQGZkH/pocketchef.png",
+    "title": "PocketChef",
+    "companyName": "CraveBit Studios",
+    "id": 6,
+    "description": "PocketChef is an AI-driven cooking assistant designed for food lovers and beginners alike. It helps you discover new recipes based on ingredients you already have. Step-by-step video guides, voice instructions, and adjustable servings make cooking stress-free. The app also includes calorie tracking, grocery lists, and regional recipe filters. PocketChef’s recommendation engine learns your taste preferences over time, curating personalized meal plans. With hands-free navigation and offline access, it’s perfect for busy home cooks. Whether you want to bake, grill, or meal prep, PocketChef transforms your kitchen experience into a creative adventure.",
+    "size": 68.9,
+    "reviews": 28900,
+    "ratingAvg": 4.5,
+    "downloads": 510000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2900 },
+      { "name": "4 star", "count": 8700 },
+      { "name": "5 star", "count": 15100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/SXJJhwcp/studynest.png",
+    "title": "StudyNest",
+    "companyName": "Edusoft Works",
+    "id": 7,
+    "description": "StudyNest helps students and professionals organize study sessions more effectively. It combines flashcards, notes, and quizzes in one simple dashboard. The AI study planner tracks weak areas and suggests topics for review. You can create study rooms with friends to collaborate, share progress, and test each other. Its Pomodoro timer and focus mode help maintain productivity while reducing burnout. With detailed progress analytics and smart reminders, StudyNest ensures steady improvement. The offline mode lets you learn anywhere without losing progress. It’s the perfect learning partner for exams, skill-building, or lifelong education.",
+    "size": 61.4,
+    "reviews": 9600,
+    "ratingAvg": 4.8,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 8300 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y43wj5xx/fitsync.png",
+    "title": "FitSync",
+    "companyName": "PulseMotion Ltd.",
+    "id": 8,
+    "description": "FitSync is a comprehensive health tracking app that motivates users to stay active and maintain balance. It combines step tracking, calorie counting, hydration reminders, and personalized workout plans in one seamless interface. The app adapts to your lifestyle using smart algorithms and syncs with popular wearables. FitSync’s analytics dashboard visualizes daily, weekly, and monthly performance trends, helping users make data-driven health decisions. Whether you’re just starting or maintaining an active lifestyle, FitSync keeps you accountable and inspired with progress milestones and motivational achievements.",
+    "size": 52.8,
+    "reviews": 18700,
+    "ratingAvg": 4.4,
+    "downloads": 310000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2800 },
+      { "name": "4 star", "count": 6700 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/QFqF6sqm/budgetbee.png",
+    "title": "BudgetBee",
+    "companyName": "ClearPath Apps",
+    "id": 9,
+    "description": "BudgetBee makes personal finance simple, smart, and enjoyable. It allows you to track expenses, plan budgets, and monitor savings effortlessly. The app uses AI to categorize transactions automatically, offering visual summaries that help you understand your spending habits. You can set savings goals, receive alerts before overspending, and even connect multiple wallets for better tracking. BudgetBee’s monthly insights and customizable charts empower users to make smarter financial decisions. Whether managing personal finances or planning family budgets, BudgetBee ensures your money works for you.",
+    "size": 38.6,
+    "reviews": 14300,
+    "ratingAvg": 4.6,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 9700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hJc1WFLF/notedesk.png",
+    "title": "NoteDesk",
+    "companyName": "FlowSync Co.",
+    "id": 10,
+    "description": "NoteDesk is a modern note-taking and idea management app that keeps everything neatly organized. It supports markdown formatting, cloud backup, and collaboration features for teams. Users can create notebooks, attach files, and tag notes for easy retrieval. Its AI search instantly finds what you’re looking for, even within PDFs and images. NoteDesk’s minimalist design makes writing feel natural and focused. The app also includes widgets, offline support, and secure encryption for sensitive information. Perfect for students, writers, and professionals who value clarity and efficiency.",
+    "size": 47.2,
+    "reviews": 20300,
+    "ratingAvg": 4.7,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 430 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 5500 },
+      { "name": "5 star", "count": 12100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/YBtjnjNq/planwise.png",
+    "title": "PlanWise",
+    "companyName": "NextPhase Studios",
+    "id": 11,
+    "description": "PlanWise is a smart event and schedule planner built for people who like structure. Whether it’s managing personal appointments, meetings, or travel itineraries, PlanWise organizes your time efficiently. Its auto-sync feature integrates with Google Calendar and Outlook, ensuring you never miss an event. Users can create templates for recurring plans and use its visual week timeline for better clarity. PlanWise also includes a priority scale to highlight urgent tasks. With a clean interface and adaptive reminders, it’s the ultimate productivity sidekick for modern professionals.",
+    "size": 54.6,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 190000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 6580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/M58hG4h4/sketcha.png",
+    "title": "Sketcha",
+    "companyName": "CreativeNest Labs",
+    "id": 12,
+    "description": "Sketcha transforms your mobile device into a creative sketchbook. Whether you’re a professional artist or a hobbyist, it offers layers, brushes, and texture tools to match every style. The app supports pressure-sensitive styluses and lets you export work in high resolution. Sketcha also includes perspective grids, symmetry modes, and blending tools. Its autosave and version history make experimentation easy. With an intuitive interface, Sketcha feels fast and fluid, empowering creators to sketch, paint, and design wherever inspiration strikes.",
+    "size": 87.9,
+    "reviews": 22900,
+    "ratingAvg": 4.6,
+    "downloads": 280000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 6600 },
+      { "name": "5 star", "count": 12200 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTwxW6pr/soundrift.png",
+    "title": "SoundRift",
+    "companyName": "EchoNova Inc.",
+    "id": 13,
+    "description": "SoundRift is a next-gen music streaming app focusing on discovery and personalization. Instead of pushing trends, it curates playlists based on your mood, activity, and environment. You can explore emerging artists, create private mixtapes, and share collaborative playlists with friends. Its adaptive equalizer and offline mode ensure great listening anywhere. SoundRift also supports lossless audio playback for audiophiles. With smooth transitions and smart recommendations, it’s not just another player — it’s an experience built around your sound identity.",
+    "size": 96.3,
+    "reviews": 32000,
+    "ratingAvg": 4.4,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 9200 },
+      { "name": "5 star", "count": 16100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BV9pH5wn/clipvault.png",
+    "title": "ClipVault",
+    "companyName": "Bitform Apps",
+    "id": 14,
+    "description": "ClipVault is the ultimate clipboard manager for multitaskers. It saves everything you copy — text, links, or images — in one searchable vault. Users can organize snippets into folders, tag important notes, and quickly paste across apps. Its floating widget lets you access history instantly without switching screens. ClipVault also includes cloud backup, cross-device sync, and auto-clean options. Whether you’re coding, writing, or researching, it saves time and boosts workflow efficiency. Clean, private, and lightning fast, ClipVault makes copy-paste smarter than ever.",
+    "size": 28.9,
+    "reviews": 6400,
+    "ratingAvg": 4.5,
+    "downloads": 125000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 6310 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4nTLXBrW/weatherly.png",
+    "title": "Weatherly",
+    "companyName": "SkyLink Systems",
+    "id": 15,
+    "description": "Weatherly delivers accurate forecasts with beautiful visualizations. Beyond temperature updates, it offers detailed air quality data, pollen levels, and UV alerts. The app’s radar maps are animated for real-time storm tracking. With customizable widgets and minimalist design, Weatherly fits perfectly on any home screen. Its AI-based alert system predicts rain or snow before it starts, giving you time to plan ahead. Whether you’re checking today’s weather or a two-week forecast, Weatherly brings clarity and style to your day.",
+    "size": 42.5,
+    "reviews": 28100,
+    "ratingAvg": 4.7,
+    "downloads": 370000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1600 },
+      { "name": "4 star", "count": 6900 },
+      { "name": "5 star", "count": 18700 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nqjRJMYd/langmate.png",
+    "title": "LangMate",
+    "companyName": "PolyLingua Labs",
+    "id": 16,
+    "description": "LangMate is an interactive language learning app that connects learners with native speakers worldwide. It combines AI-based lessons with real-time voice chat practice, making learning natural and engaging. The app tracks pronunciation accuracy, vocabulary growth, and fluency improvement over time. You can also join themed group discussions to practice cultural expressions and idioms. LangMate’s adaptive system identifies your weak areas and reinforces them with tailored exercises. Whether you want to master Spanish, Japanese, or French, LangMate ensures real progress through conversation-based learning.",
+    "size": 74.3,
+    "reviews": 24800,
+    "ratingAvg": 4.6,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 8100 },
+      { "name": "5 star", "count": 12900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/G3f3t46b/tripnest.png",
+    "title": "TripNest",
+    "companyName": "GlobeTrail Ventures",
+    "id": 17,
+    "description": "TripNest simplifies travel planning by curating personalized itineraries based on your preferences. You can explore destinations, find hidden gems, and get real-time suggestions for food, attractions, and transport. The app’s smart assistant helps you compare flight and hotel options in one place. With offline maps and expense tracking, it’s ideal for adventurers and frequent travelers. TripNest’s interactive travel journal lets you record memories and share experiences with friends. From weekend getaways to cross-country tours, it makes planning stress-free and fun.",
+    "size": 82.7,
+    "reviews": 29800,
+    "ratingAvg": 4.5,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7600 },
+      { "name": "5 star", "count": 17400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/S45sDN9g/groovify.png",
+    "title": "Groovify",
+    "companyName": "WaveSync Media",
+    "id": 18,
+    "description": "Groovify is a sleek music player and playlist maker that gives users total control over their listening experience. It features gapless playback, smart crossfade, and a customizable equalizer. You can organize songs by mood, tempo, or genre and create stunning visual themes. Its offline caching allows uninterrupted playback even when you’re on the move. The interface is built for minimal distraction, ensuring your music takes center stage. Groovify also learns your taste over time and curates weekly mixes designed just for you.",
+    "size": 69.1,
+    "reviews": 21700,
+    "ratingAvg": 4.4,
+    "downloads": 330000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2900 },
+      { "name": "4 star", "count": 6800 },
+      { "name": "5 star", "count": 14900 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HDtPH4gh/timelynote.png",
+    "title": "TimelyNote",
+    "companyName": "FocusGrid Apps",
+    "id": 19,
+    "description": "TimelyNote blends note-taking and scheduling into one streamlined app. You can jot quick ideas, attach tasks, and assign deadlines seamlessly. Its calendar integration syncs all notes with reminders automatically. The AI summarizer organizes long notes into concise points, helping you review efficiently. Users love its smart tagging, voice dictation, and cross-device cloud sync. With its elegant design and dark mode support, TimelyNote offers both productivity and comfort. Perfect for professionals, students, and creators who want structure without complexity.",
+    "size": 46.9,
+    "reviews": 15300,
+    "ratingAvg": 4.7,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 9600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/fzrdKX4L/cinemate.png",
+    "title": "CineMate",
+    "companyName": "VisionTrail Studios",
+    "id": 20,
+    "description": "CineMate is a personalized movie discovery and tracking app for cinema enthusiasts. It recommends films based on your viewing history, mood, and favorite genres. Users can maintain watchlists, rate movies, and explore curated collections by critics. CineMate integrates trailers, cast details, and streaming links into one convenient interface. The AI recommendation system evolves with your preferences, always keeping your next favorite movie just a tap away. With dark mode, minimal clutter, and rich visuals, CineMate makes movie exploration both effortless and immersive.",
+    "size": 71.4,
+    "reviews": 38400,
+    "ratingAvg": 4.8,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 7200 },
+      { "name": "5 star", "count": 28000 }
+    ]
+  }
+]
