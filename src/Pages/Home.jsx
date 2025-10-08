@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Components/Banner/Banner';
 import Stats from '../Components/Stats/Stats';
 import FeaturedApps from '../Components/FeaturedApps/FeaturedApps';
+import Loader from '../Components/Loader/Loader';
 
 const Home = () => {
     return (

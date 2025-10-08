@@ -14,16 +14,22 @@ const Banner = () => {
             </h1>
             <p className=' text-[#627382] md:text-xl ' >At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='my-10 text-xl text-[#001931] font-semibold flex items-center gap-4 ' >
-                <a href="">
+                <a
+                    href="https://play.google.com/"
+                    target='_blank'
+                >
                     <button className='btn border-[#d2d2d2] px-8 py-6 rounded-sm '>
                         <img src={playstorelogo} className='h-7' /> Google Play
-                        </button>
-                    </a>
-                <a href="">
+                    </button>
+                </a>
+                <a
+                    href="https://www.apple.com/app-store/"
+                    target='_blank'
+                >
                     <button className='btn border-[#d2d2d2] px-8 py-6 rounded-sm '>
                         <img src={appstorelogo} className='h-7' /> App Store
-                        </button>
-                    </a>
+                    </button>
+                </a>
             </div>
             <img src={heroimage} alt="Hero Image" />
         </div>

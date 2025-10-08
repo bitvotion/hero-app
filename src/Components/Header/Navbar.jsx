@@ -33,9 +33,11 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex items-center gap-8 font-medium ">
-                        <li><NavLink to='/' >Home</NavLink></li>
-                        <li><NavLink to='/apps' >Apps</NavLink></li>
-                        <li><NavLink to='/installed-app' >Installation</NavLink></li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out' >
+                            <NavLink to='/'>Home</NavLink>
+                        </li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/apps' >Apps</NavLink></li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/installed-app' >Installation</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
@@ -45,7 +47,7 @@ const Navbar = () => {
                         rel='noopener noreferrer'
                     >
 
-                        <button className='text-white btn flex items-center gap-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-5 py-4 rounded-sm border-none '>
+                        <button className='text-white btn flex items-center gap-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-5 py-4 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative '>
                             <IoLogoGithub />
                             <h3 className='font-semibold'>Contribute</h3>
                         </button>
