@@ -5,13 +5,13 @@ import dwnldIcon from '../assets/icon-downloads.png'
 import ratingIcon from '../assets/icon-ratings.png'
 import reviewIcon from '../assets/icon-review.png'
 import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
+    ResponsiveContainer,
 } from "recharts";
 import Loader from '../Components/Loader/Loader';
 import { getInstalledApps, installIntoLS } from '../utilities/addToLS';
@@ -24,7 +24,7 @@ const AppsDetails = () => {
     const { appId } = useParams();
     const newAppId = parseInt(appId)
     const { apps, loading, error } = useAppsData();
-    
+
     useEffect(() => {
 
         const installed = getInstalledApps();
@@ -33,7 +33,7 @@ const AppsDetails = () => {
             setMarkedInstalled(true);
         }
 
-    },[newAppId])
+    }, [newAppId])
 
     if (loading) {
         return <Loader />
@@ -43,7 +43,7 @@ const AppsDetails = () => {
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
 
-    
+
 
     const handleInstalled = (id) => {
 
@@ -69,72 +69,94 @@ const AppsDetails = () => {
 
 
     return (
-        <div className=' max-w-[1536px] mx-auto my-20 ' >
-            <div className='flex'>
-                <div className='overflow-hidden w-1/4 ' >
+        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 ' >
+            <div className='flex flex-col md:flex-row '>
+                <div className='overflow-hidden md:w-1/4 flex gap-4 ' >
                     <img
                         src={image}
                         alt={title}
-                        className='w-85 h-85 object-cover'
+                        className='md:w-85 md:h-85 h-30 object-cover'
                     />
+                    <div className='md:hidden' >
+                        <h1 className="text-[32px] font-bold mb-2 w-full ">
+                            {title}
+                        </h1>
+                        <p>Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
+                    </div>
                 </div>
-                <div className=' pl-10 w-3/4 flex flex-col justify-between'>
-                    <h1 className="text-[32px] font-bold mb-2 w-full ">
+                <div className=' md:pl-10 md:w-3/4 flex flex-col justify-between'>
+                    <h1 className="text-[32px] font-bold mb-2 w-full hidden md:block ">
                         {title}
                     </h1>
-                    <p>Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
+                    <p className=' hidden md:block' >Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
 
                     <hr className='my-6 text-[#00193120] ' />
 
-                    <div className=' flex gap-10 text-[#001931] mb-3 ' >
-                        <div>
-                            <img src={dwnldIcon} className=' mb-2' />
+                    <div className=' flex justify-around md:justify-start scale-95 md:scale-100 gap-10 text-[#001931] mb-3 ' >
+                        <div className='flex flex-col md:block' >
+                            <img src={dwnldIcon} className='w-10  mb-2' />
                             <p className=' mb-2  '>Downloads</p>
                             <h2 className=' text-[40px] font-extrabold ' >{formatNumber(downloads)}</h2>
                         </div>
 
-                        <div>
-                            <img src={ratingIcon} className=' mb-2' />
+                        <div className='flex flex-col md:block'>
+                            <img src={ratingIcon} className='w-10  mb-2' />
                             <p className=' mb-2  '>Average Ratings</p>
                             <h2 className=' text-[40px] font-extrabold ' >{ratingAvg}</h2>
                         </div>
 
-                        <div>
-                            <img src={reviewIcon} className=' mb-2' />
+                        <div className='flex flex-col md:block'>
+                            <img src={reviewIcon} className='w-10 mb-2' />
                             <p className=' mb-2  '>Total Reviews</p>
                             <h2 className=' text-[40px] font-extrabold ' >{formatNumber(reviews)}</h2>
                         </div>
                     </div>
 
-                    <button 
+                    <button
                         onClick={() => handleInstalled(newAppId)}
                         disabled={markedInstalled}
                         className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center 
-                            ${markedInstalled 
+                            ${markedInstalled
                                 ? 'bg-gray-500 cursor-not-allowed'
                                 : 'bg-[#00D390]'
                             } `}>
-                            {
-                                markedInstalled 
+                        {
+                            markedInstalled
                                 ? `Installed`
                                 : `Install Now (${size} MB)`
-                            }
+                        }
                     </button>
                 </div>
             </div>
 
             <hr className='my-10 text-[#00193120] ' />
 
-            <div>
+            <div className=' hidden md:block ' >
                 <ResponsiveContainer width="100%" height={400}>
-                    <BarChart 
+                    <BarChart
                         data={ratings}
                         layout='vertical'
-                        margin={{top:0, right:30, left:30, bottom:20}}
+                        margin={{ top: 0, right: 30, left: 30, bottom: 20 }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis type='number' />
-                        <YAxis  type="category" dataKey="name" reversed />
+                        <YAxis type="category" dataKey="name" reversed />
+                        <Tooltip />
+                        <Bar dataKey="count" fill="#ff8811" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+
+            <div className=' md:hidden ' >
+                <ResponsiveContainer width="100%" height={400}>
+                    <BarChart
+                        data={ratings}
+                        layout='horizontal'
+                        margin={{ top: 0, right: 30, left: 30, bottom: 20 }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <YAxis type='number' />
+                        <XAxis type="category" dataKey="name" reversed />
                         <Tooltip />
                         <Bar dataKey="count" fill="#ff8811" />
                     </BarChart>

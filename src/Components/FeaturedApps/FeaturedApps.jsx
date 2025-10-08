@@ -18,7 +18,7 @@ const FeaturedApps = () => {
     }
 
     return (
-        <div className=' max-w-[1536px] mx-auto ' >
+        <div >
 
             <h1 className=' text-5xl font-bold text-[#001931] text-center mb-4 ' >Trending Apps</h1>
 

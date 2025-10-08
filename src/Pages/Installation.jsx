@@ -25,14 +25,14 @@ const Installation = () => {
 
 
     return (
-        <div className=' max-w-[1536px] mx-auto ' >
+        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 '>
             <div>
                 <h1 className=' text-5xl font-bold text-[#001931] text-center mb-4 ' >Your Installed Apps</h1>
 
                 <p className=' text-xl text-[#627382] text-center mb-10 '>Explore All Trending Apps on the Market developed by us</p>
             </div>
             <div className=' flex justify-between items-center mb-4 ' >
-                <h2 className='font-semibold text-2xl text-[#001931] ' >
+                <h2 className='font-semibold md:text-2xl text-[#001931] ' >
                     {
                         installedApps.length <= 1
                         ? `${installedApps.length} App Found `

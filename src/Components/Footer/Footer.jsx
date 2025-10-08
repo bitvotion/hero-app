@@ -6,7 +6,7 @@ import { IoLogoGithub } from 'react-icons/io';
 const Footer = () => {
     return (
         <div className='bg-white' >
-            <div className=' relative max-w-[1536px] mx-auto '>
+            <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 '>
                 <div className='relative flex items-center flex-col-reverse md:flex-row justify-around py-10 ' >
                     <div>
                         <fieldset className="w-80">
@@ -60,7 +60,7 @@ const Footer = () => {
                 <hr className=' text-gray-200 ' />
 
                 <div className=' flex flex-col-reverse gap-2 md:gap-0 md:flex-row items-center justify-between py-3 text-gray-500 text-sm '>
-                    <ul className=' flex items-center flex-wrap gap-6  ' >
+                    <ul className=' flex items-center flex-wrap gap-4  ' >
                         <li className=' hover:text-gray-900 cursor-pointer ' >Terms of Service</li>
                         <li className=' hover:text-gray-900 cursor-pointer ' >Privacy</li>
                         <li className=' hover:text-gray-900 cursor-pointer ' >About</li>
