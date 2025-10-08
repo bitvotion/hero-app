@@ -1,2 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-center .active {
+    font-weight: 600;
+
+    background: linear-gradient(to right, #632EE3, #9F62F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #632EE3, #9F62F2) 1;
+    border-image-slice: 1;
+
+    /* display: inline-block; */
+}
