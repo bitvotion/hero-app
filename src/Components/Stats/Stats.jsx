@@ -7,7 +7,7 @@ const Stats = () => {
             <div className=' max-w-[1536px] mx-auto ' >
                 <h1 className=' text-center text-5xl font-bold mb-10 ' >Trusted by Millions, Built for You</h1>
 
-                <div className=' flex justify-center items-center gap-25 '>
+                <div className=' flex justify-center items-center flex-col md:flex-row gap-10 md:gap-25 '>
                     <div className=' flex flex-col gap-4 justify-center text-center '>
                         <p>Total Downloads</p>
                         <h1 className=' font-extrabold text-[64px] '>29.6M</h1>

@@ -9,6 +9,9 @@ const Home = () => {
                 <Banner />
             </div>
             <Stats />
+            <div className='max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8'>
+                
+            </div>
         </div>
     );
 };
