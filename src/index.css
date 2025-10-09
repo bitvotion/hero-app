@@ -12,16 +12,13 @@ body {
 
 .navbar-center .active {
   font-weight: 600;
-
   background: linear-gradient(to right, #632ee3, #9f62f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, #632ee3, #9f62f2) 1;
   border-image-slice: 1;
-
   display: inline-block;
 }

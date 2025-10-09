@@ -5,7 +5,7 @@ import { IoLogoGithub } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <div className=' bg-white shadow-sm '>
+        <div className=' bg-white shadow-sm sticky top-0 z-[9999] '>
             <nav className="navbar max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -17,7 +17,7 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><NavLink to='/' >Home</NavLink></li>
                             <li><NavLink to='/apps' >Apps</NavLink></li>
-                            <li><NavLink to='/installed-app' >My Installation</NavLink></li>
+                            <li><NavLink to='/installed-app' >Installation</NavLink></li>
                         </ul>
                     </div>
                     <Link to="/">
@@ -36,8 +36,12 @@ const Navbar = () => {
                         <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out' >
                             <NavLink to='/'>Home</NavLink>
                         </li>
-                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/apps' >Apps</NavLink></li>
-                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/installed-app' >My Installation</NavLink></li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' >
+                            <NavLink to='/apps' >Apps</NavLink>
+                        </li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' >
+                            <NavLink to='/installed-app' >Installation</NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="navbar-end">

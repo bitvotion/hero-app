@@ -15,7 +15,7 @@ import {
 } from "recharts";
 import Loader from '../Components/Loader/Loader';
 import { getInstalledApps, installIntoLS } from '../utilities/addToLS';
-import { Bounce, toast} from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 
 
 const AppsDetails = () => {
@@ -55,17 +55,17 @@ const AppsDetails = () => {
             setMarkedInstalled(true)
 
             toast.success(`${title} installed successfully`, {
-            position: "top-center",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-        });
-        } 
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+        }
     }
 
     const formatNumber = (num) => {
@@ -84,57 +84,94 @@ const AppsDetails = () => {
 
     return (
         <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 animate-fade-up-scale5s ' >
-            <div className='flex flex-col md:flex-row '>
-                <div className='overflow-hidden flex gap-4 ' >
-                    <img
-                        src={image}
-                        alt={title}
-                        className='md:w-85 md:h-85 h-30 object-cover'
-                    />
-                    <div className='md:hidden' >
-                        <h1 className="text-[32px] font-bold mb-2 w-full ">
+
+            <div className='flex gap-4 flex-col sm:flex-row'>
+                <div className='flex items-center gap-4' >
+                    <div className='' >
+                        <img
+                            src={image}
+                            alt={title}
+                            className='w-30 sm:w-60 md:w-85 aspect-square object-cover rounded-xl block '
+                        />
+                    </div>
+
+                    <div className='sm:hidden' >
+                        <h1 className="text-2xl sm:text-[32px] font-bold mb-2 w-full  ">
                             {title}
                         </h1>
-                        <p>Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
+                        <p className=' md:block' >Developed by <span className='font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
+
+                        <hr className='my-1 w-full text-[#00193120]  ' />
+
+                        <button
+                            onClick={(e) => {
+                                e.stopPropagation()
+                                e.preventDefault()
+                                handleInstalled(newAppId)
+                            }}
+                            disabled={markedInstalled}
+                            className={` text-white border-none transition-all duration-150 ease-in-out hover:scale-102  active:shadow-inner active:translate-y-[2px] btn my-2 
+                            ${markedInstalled
+                                    ? 'bg-gray-500 cursor-not-allowed'
+                                    : 'bg-[#00D390]'
+                                } `}
+                        >
+                            {
+                                markedInstalled
+                                    ? `Installed`
+                                    : `Install Now (${size} MB)`
+                            }
+                        </button>
                     </div>
+
                 </div>
-                <div className=' md:pl-10 w-2/3 md:3/4 flex flex-col justify-between'>
-                    <h1 className="text-[32px] font-bold mb-2 w-full hidden md:block ">
-                        {title}
-                    </h1>
-                    <p className=' hidden md:block' >Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
 
-                    <hr className='my-6 text-[#00193120] ' />
+                <div className=''>
+                    <div className='hidden sm:block ' >
+                        <h1 className="text-[32px] font-bold mb-2 w-full  ">
+                            {title}
+                        </h1>
+                        <p className=' md:block' >Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
+                    </div>
 
-                    <div className=' flex justify-around md:justify-start scale-95 md:scale-100 gap-2 text-[#001931] mb-3 ' >
-                        <div className='flex items-center md:items-start flex-col md:block' >
-                            <img src={dwnldIcon} className='w-10  mb-2' />
+                    <div>
+                        <hr className='my-6 w-full text-[#00193120] ' />
+                    </div>
+
+                    {/* States */}
+
+                    <div className=' flex justify-around md:justify-start scale-85 md:scale-100 gap-2 text-[#001931] mb-3 ' >
+
+                        <div className=' flex items-center flex-col mr-4 animate-fade-in-scale-l ' >
+                            <img src={dwnldIcon} className='w-10  mb-2 block ' />
                             <p className=' md:mb-2  '>Downloads</p>
                             <h2 className='text-3xl md:text-[40px] font-extrabold ' >{formatNumber(downloads)}</h2>
                         </div>
-
-                        <div className='flex items-center md:items-start flex-col md:block'>
-                            <img src={ratingIcon} className='w-10  mb-2' />
+                        <div className=' flex items-center flex-col mr-4 animate-fade-in-scale-l' >
+                            <img src={ratingIcon} className='w-10  mb-2 block ' />
                             <p className=' md:mb-2  '>Average Ratings</p>
-                            <h2 className=' text-3xl md:text-[40px] font-extrabold ' >{ratingAvg}</h2>
+                            <h2 className='text-3xl md:text-[40px] font-extrabold ' >{ratingAvg}</h2>
                         </div>
-
-                        <div className='flex items-center md:items-start flex-col md:block'>
-                            <img src={reviewIcon} className='w-10 mb-2' />
+                        <div className=' flex items-center flex-col mr-4 animate-fade-in-scale-l' >
+                            <img src={reviewIcon} className='w-10  mb-2 block ' />
                             <p className=' md:mb-2  '>Total Reviews</p>
-                            <h2 className=' text-3xl md:text-[40px] font-extrabold ' >{formatNumber(reviews)}</h2>
+                            <h2 className='text-3xl md:text-[40px] font-extrabold ' >{formatNumber(reviews)}</h2>
                         </div>
                     </div>
 
                     <button
-                        onClick={() => handleInstalled(newAppId)}
+                        onClick={(e) => {
+                            e.stopPropagation()
+                            e.preventDefault()
+                            handleInstalled(newAppId)
+                        }}
                         disabled={markedInstalled}
-                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center 
+                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center hidden md:block
                             ${markedInstalled
-                                ? 'bg-gray-500 cursor-not-allowed'
-                                : 'bg-[#00D390]'
-                            } `} 
-                             >
+                                ? 'bg-gray-400 cursor-not-allowed '
+                                : 'bg-[#00D390] hover:scale-105 '
+                            } `}
+                    >
                         {
                             markedInstalled
                                 ? `Installed`
@@ -151,7 +188,7 @@ const AppsDetails = () => {
                     <BarChart
                         data={ratings}
                         layout='vertical'
-                        margin={{ top: 0, right: 30, left: 30, bottom: 20 }}
+                        margin={{ top: 0, right: 20, left: 10, bottom: 40 }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis type='number' />
@@ -162,12 +199,12 @@ const AppsDetails = () => {
                 </ResponsiveContainer>
             </div>
 
-            <div className=' md:hidden ' >
-                <ResponsiveContainer width="100%" height={400}>
+            <div className=' md:hidden  ' >
+                <ResponsiveContainer width="100%" height={300}>
                     <BarChart
                         data={ratings}
                         layout='horizontal'
-                        margin={{ top: 0, right: 30, left: 30, bottom: 20 }}
+                        margin={{ top: 0, right: 10, left: 4, bottom: 0 }}
                     >
                         <CartesianGrid strokeDasharray="3 3" />
                         <YAxis type='number' />
