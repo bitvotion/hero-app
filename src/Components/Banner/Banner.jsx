@@ -18,7 +18,7 @@ const Banner = () => {
                     href="https://play.google.com/"
                     target='_blank'
                 >
-                    <button className='btn border-[#d2d2d2] px-8 py-6 rounded-sm animate-fade-in-scale '>
+                    <button className='btn border-none px-8 py-6 rounded-sm animate-fade-in-scale bg-green-200 hover:bg-green-300 hover:scale-102 ease-in-out duration-200 '>
                         <img src={playstorelogo} className='h-7' /> Google Play
                     </button>
                 </a>
@@ -26,7 +26,7 @@ const Banner = () => {
                     href="https://www.apple.com/app-store/"
                     target='_blank'
                 >
-                    <button className='btn border-[#d2d2d2] px-8 py-6 rounded-sm animate-fade-in-scale-l '>
+                    <button className='btn border-none px-8 py-6 rounded-sm animate-fade-in-scale-l bg-blue-200 hover:bg-blue-300 hover:scale-102 ease-in-out duration-200 '>
                         <img src={appstorelogo} className='h-7' /> App Store
                     </button>
                 </a>

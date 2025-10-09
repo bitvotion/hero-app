@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  --animate-fade-in-scale: fade-in-scale 0.5s ease-out;
   @keyframes fade-in-scale {
     0% {
       opacity: 0;
@@ -11,7 +11,7 @@
       transform: translateX(0);
     }
   }
-  --animate-fade-in-scale-l: fade-in-scale-l 0.3s ease-out;
+  --animate-fade-in-scale-l: fade-in-scale-l 0.5s ease-out;
   @keyframes fade-in-scale-l {
     0% {
       opacity: 0;
@@ -22,7 +22,7 @@
       transform: translateX(0);
     }
   }
-  --animate-fade-up-scale: fade-up-scale 0.3s ease-out;
+  --animate-fade-up-scale: fade-up-scale 0.4s ease-out;
   @keyframes fade-up-scale {
     0% {
       opacity: 0;

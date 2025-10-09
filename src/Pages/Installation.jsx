@@ -4,6 +4,7 @@ import { getInstalledApps } from '../utilities/addToLS';
 import Loader from '../Components/Loader/Loader';
 import InstalledAppCard from '../Components/AppCard/installedAppCard';
 import AppError from './ErrorPages/AppError';
+import NoApp from '../Components/NoApp/NoApp';
 
 const Installation = () => {
 
@@ -65,7 +66,7 @@ const Installation = () => {
             <div>
                 {
                     !sortedItem.length
-                    ? "No App found"
+                    ? <NoApp />
                     : sortedItem.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
                 }
             </div>
