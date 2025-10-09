@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAppsData from '../Hooks/useAppsData';
 import { getInstalledApps } from '../utilities/addToLS';
 import Loader from '../Components/Loader/Loader';
-import InstalledAppCard from '../Components/AppCard/installedAppCard';
+import InstalledAppCard from '../Components/InstalledAppCard/InstalledAppCard';
 import NoApp from '../Components/NoApp/NoApp';
 
 const Installation = () => {
