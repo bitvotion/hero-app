@@ -26,7 +26,7 @@ const Footer = () => {
                             src={logo}
                             className=' h-25 '
                         />
-                        <h2 className='text-5xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent '>HERO.IO</h2>
+                        <h2 className='text-5xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent '>BitVotion.IO</h2>
                     </div>
                 </div>
 

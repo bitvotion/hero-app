@@ -12,7 +12,9 @@ const Banner = () => {
                 <span className=' font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' >Productive </span>
                 Apps
             </h1>
-            <p className=' text-[#627382] md:text-xl animate-fade-up-scale-op ' >At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+            <p className=' text-[#627382] md:text-xl animate-fade-up-scale-op ' >At 
+                <span className=' font-semibold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > BitVotion.IO </span>
+                 , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='my-10 text-xl text-[#001931] font-semibold flex items-center gap-4 ' >
                 <a
                     href="https://play.google.com/"

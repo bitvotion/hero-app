@@ -27,7 +27,7 @@ const Navbar = () => {
                                 alt="Logo"
                                 className='h-10'
                             />
-                            <h2 className=' font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' >HERO.IO</h2>
+                            <h2 className=' font-bold text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' >BitVotion.IO</h2>
                         </div>
                     </Link>
                 </div>
