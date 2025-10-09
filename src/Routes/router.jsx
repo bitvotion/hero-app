@@ -6,7 +6,6 @@ import AppsDetails from "../Pages/AppsDetails";
 import Error404 from "../Pages/ErrorPages/Error404";
 import AppError from "../Pages/ErrorPages/AppError";
 import Installation from "../Pages/Installation";
-import Loader from "../Components/Loader/Loader";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +31,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/installed-app",
-          errorElement: <AppError />,
+          errorElement: <Error404 />,
           Component: Installation
         },
     ]
