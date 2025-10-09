@@ -92,23 +92,23 @@ const AppsDetails = () => {
 
                     <hr className='my-6 text-[#00193120] ' />
 
-                    <div className=' flex justify-around md:justify-start scale-95 md:scale-100 gap-10 text-[#001931] mb-3 ' >
-                        <div className='flex flex-col md:block' >
+                    <div className=' flex justify-around md:justify-start scale-95 md:scale-100 gap-2 text-[#001931] mb-3 ' >
+                        <div className='flex items-center md:items-start flex-col md:block' >
                             <img src={dwnldIcon} className='w-10  mb-2' />
-                            <p className=' mb-2  '>Downloads</p>
-                            <h2 className=' text-[40px] font-extrabold ' >{formatNumber(downloads)}</h2>
+                            <p className=' md:mb-2  '>Downloads</p>
+                            <h2 className='text-3xl md:text-[40px] font-extrabold ' >{formatNumber(downloads)}</h2>
                         </div>
 
-                        <div className='flex flex-col md:block'>
+                        <div className='flex items-center md:items-start flex-col md:block'>
                             <img src={ratingIcon} className='w-10  mb-2' />
-                            <p className=' mb-2  '>Average Ratings</p>
-                            <h2 className=' text-[40px] font-extrabold ' >{ratingAvg}</h2>
+                            <p className=' md:mb-2  '>Average Ratings</p>
+                            <h2 className=' text-3xl md:text-[40px] font-extrabold ' >{ratingAvg}</h2>
                         </div>
 
-                        <div className='flex flex-col md:block'>
+                        <div className='flex items-center md:items-start flex-col md:block'>
                             <img src={reviewIcon} className='w-10 mb-2' />
-                            <p className=' mb-2  '>Total Reviews</p>
-                            <h2 className=' text-[40px] font-extrabold ' >{formatNumber(reviews)}</h2>
+                            <p className=' md:mb-2  '>Total Reviews</p>
+                            <h2 className=' text-3xl md:text-[40px] font-extrabold ' >{formatNumber(reviews)}</h2>
                         </div>
                     </div>
 

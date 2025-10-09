@@ -28,10 +28,10 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
     return (
         <div className=' bg-white p-4 flex justify-between items-center my-4 rounded-sm ' >
             <div className='flex justify-between sm:justify-start items-center sm:gap-8 w-full ' >
-                <div className=' w-20 h-20 overflow-hidden rounded-lg '>
+                <div className=' sm:w-20 sm:h-20 w-16 overflow-hidden rounded-lg '>
                     <img
                         src={image}
-                        className='w-20 h-20 object-cover rounded-lg ' />
+                        className='sm:w-20 sm:h-20 w-16 object-cover rounded-lg ' />
                 </div>
                 <div className='flex flex-col gap-4'>
                     <h2 className="text-lg font-medium text-[#001931] ">{title}</h2>

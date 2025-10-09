@@ -3,24 +3,35 @@ import useAppsData from '../Hooks/useAppsData';
 import { getInstalledApps } from '../utilities/addToLS';
 import Loader from '../Components/Loader/Loader';
 import InstalledAppCard from '../Components/AppCard/installedAppCard';
+import AppError from './ErrorPages/AppError';
 
 const Installation = () => {
 
     const { apps, loading } = useAppsData();
     const [installedApps, setInstalledApps] = useState([]);
+    const [sortOrder, setSortOrder] = useState('none');
 
     useEffect(() => {
         const installedAppsId = getInstalledApps()
-        // const installedAppsId = installedAppsIdSTR.map(id => parseInt(id))
-
         const newInstalledApps = apps.filter(app => installedAppsId.includes(app.id))
 
         setInstalledApps(newInstalledApps)
     }, [apps])
 
+    const sortedItem = (() => {
+        if (sortOrder === 'download-asc') {
+            return [...installedApps].sort((a,b) => a.downloads - b.downloads)
+        } else if (sortOrder === "download-desc") {
+            return [...installedApps].sort((a,b) => b.downloads - a.downloads)
+        } else {
+            return installedApps
+        }
+    })()
+
     if (loading) {
         return <Loader />
     }
+
 
 
 
@@ -35,15 +46,25 @@ const Installation = () => {
                 <h2 className='font-semibold md:text-2xl text-[#001931] ' >
                     {
                         installedApps.length <= 1
-                        ? `${installedApps.length} App Found `
-                        : `${installedApps.length} Apps Found`
+                            ? `${installedApps.length} App Found `
+                            : `${installedApps.length} Apps Found`
                     }
                 </h2>
-                <h2>sort</h2>
+                <label className='form-control w-full max-w-xs'>
+                    <select 
+                    className="select select-bordered" 
+                    value={sortOrder}
+                    onChange={e => setSortOrder(e.target.value)}>
+                        <option value="none">Sort by downloads</option>
+                        <option value="download-asc">Low to High</option>
+                        <option value="download.desc">High to Low</option>
+                    </select>
+
+                </label>
             </div>
             <div>
                 {
-                    installedApps.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
+                    sortedItem.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
                 }
             </div>
         </div>
