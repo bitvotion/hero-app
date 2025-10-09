@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
-import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
 
 const Footer = () => {
@@ -32,7 +32,8 @@ const Footer = () => {
 
                 <div className=' max-w-[1536px] mx-auto flex justify-center gap-8 p-4 ' >
                     <a
-                        href="#"
+                        href="https://www.instagram.com/_ddhrubb_/"
+                        target='_blank'
                         className=' group flex items-center space-x-2 transition-all '>
 
                         <div className=' hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-3 hover:text-white rounded-full transition-transform duration-300 group-hover:scale-125 ' >
@@ -40,7 +41,17 @@ const Footer = () => {
                         </div>
                     </a>
                     <a
-                        href="#"
+                        href="https://www.facebook.com/ahm.sakif24/"
+                        target='_blank'
+                        className=' group flex items-center space-x-2 transition-all '>
+
+                        <div className=' hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-3 hover:text-white rounded-full transition-transform duration-300 group-hover:scale-125 ' >
+                            <FaFacebook />
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/sakif-ahmed-9b50881a9/"
+                        target='_blank'
                         className=' group flex items-center space-x-2 transition-all '>
 
                         <div className=' hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-3 hover:text-white rounded-full transition-transform duration-300 group-hover:scale-125 ' >
@@ -48,7 +59,8 @@ const Footer = () => {
                         </div>
                     </a>
                     <a
-                        href="#"
+                        href="https://github.com/bitvotion"
+                        target='_blank'
                         className=' group flex items-center space-x-2 transition-all '>
 
                         <div className=' hover:bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-3 hover:text-white rounded-full transition-transform duration-300 group-hover:scale-125 ' >

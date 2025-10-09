@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAppsData from '../Hooks/useAppsData';
 import AppCard from '../Components/AppCard/AppCard';
 import Loader from '../Components/Loader/Loader';
@@ -7,13 +7,27 @@ import AppError from './ErrorPages/AppError';
 const AppsPage = () => {
 
     const { apps, loading } = useAppsData();
-    const [search, setSearch] = useState("")
-    const term = search.trim().toLocaleLowerCase()
-    const searchedApps = term
-        ? apps.filter(app =>
-            app.title.toLocaleLowerCase().includes(term)
-        )
-        : apps
+    const [search, setSearch] = useState("");
+    const [searchedApps, setSearchedApps] = useState([]);
+    const [searchLoading, setSearchLoading] = useState(false);
+
+    useEffect(() => {
+        setSearchLoading(true);
+        const term = search.trim().toLocaleLowerCase()
+        const filtered = term
+            ? apps.filter(app =>
+                app.title.toLocaleLowerCase().includes(term)
+            )
+            : apps;
+
+        const timer = setTimeout(() => {
+            setSearchedApps(filtered);
+            setSearchLoading(false);
+        },100)
+
+        return () => clearTimeout(timer);
+    }, [search, apps])
+
 
 
     return (
@@ -52,7 +66,7 @@ const AppsPage = () => {
                 </div>
             </div>
             {
-                loading
+                loading || searchLoading
                     ? (<Loader />)
                     : searchedApps.length === 0 ?
                         (<AppError className={`animate-rise`} />)

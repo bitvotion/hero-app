@@ -17,7 +17,7 @@ const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                             <li><NavLink to='/' >Home</NavLink></li>
                             <li><NavLink to='/apps' >Apps</NavLink></li>
-                            <li><NavLink to='/installed-app' >Installation</NavLink></li>
+                            <li><NavLink to='/installed-app' >My Installation</NavLink></li>
                         </ul>
                     </div>
                     <Link to="/">
@@ -37,7 +37,7 @@ const Navbar = () => {
                             <NavLink to='/'>Home</NavLink>
                         </li>
                         <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/apps' >Apps</NavLink></li>
-                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/installed-app' >Installation</NavLink></li>
+                        <li className='relative hover:border-2 border-[#632EE3] hover:px-4 py-1 rounded-sm transition-all duration-100 ease-in-out ' ><NavLink to='/installed-app' >My Installation</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
