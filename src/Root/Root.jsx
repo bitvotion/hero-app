@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Header/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
+import { Bounce, ToastContainer } from 'react-toastify';
 
 const Root = () => {
     return (
@@ -11,6 +12,21 @@ const Root = () => {
                 <Outlet />
             </div>
             <Footer />
+            {/* Toast */}
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                limit={1}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition={Bounce}
+            />
         </div>
     );
 };

@@ -9,7 +9,7 @@ const Loader = () => {
                     L<span>
                         <img 
                         src={logo} 
-                        className=' w-32 h-32 '
+                        className=' w-32 h-32 animate-spin '
                         style={{ animation: 'spin 2s linear infinite'}} 
                         />
                     </span>a d i n g

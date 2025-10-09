@@ -6,13 +6,14 @@ import AppsDetails from "../Pages/AppsDetails";
 import Error404 from "../Pages/ErrorPages/Error404";
 import AppError from "../Pages/ErrorPages/AppError";
 import Installation from "../Pages/Installation";
+import Loader from "../Components/Loader/Loader";
 
 const router = createBrowserRouter([
   {
     path: "/",
     errorElement: <Error404 />,
     Component: Root,
-    hydrateFallbackElement: <h1>Loading...</h1>,
+    hydrateFallbackElement: <p>Hello World</p>,
     children: [
         {
             index: true,

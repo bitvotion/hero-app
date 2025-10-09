@@ -17,7 +17,7 @@ const AppsPage = () => {
 
 
     return (
-        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 ' >
+        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 animate-fade-up-scale5s ' >
             <div>
                 <h1 className=' text-5xl font-bold text-[#001931] text-center mb-4 ' >Our All Applications</h1>
 

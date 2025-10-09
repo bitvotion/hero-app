@@ -15,6 +15,7 @@ import {
 } from "recharts";
 import Loader from '../Components/Loader/Loader';
 import { getInstalledApps, installIntoLS } from '../utilities/addToLS';
+import { Bounce, toast} from 'react-toastify';
 
 
 const AppsDetails = () => {
@@ -39,6 +40,7 @@ const AppsDetails = () => {
         return <Loader />
     }
 
+
     const app = apps.find(a => a.id === newAppId);
 
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
@@ -51,7 +53,19 @@ const AppsDetails = () => {
 
         if (installed) {
             setMarkedInstalled(true)
-        }
+
+            toast.success(`${title} installed successfully`, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
+        } 
     }
 
     const formatNumber = (num) => {
@@ -69,9 +83,9 @@ const AppsDetails = () => {
 
 
     return (
-        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 ' >
+        <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 animate-fade-up-scale5s ' >
             <div className='flex flex-col md:flex-row '>
-                <div className='overflow-hidden md:w-1/4 flex gap-4 ' >
+                <div className='overflow-hidden flex gap-4 ' >
                     <img
                         src={image}
                         alt={title}
@@ -84,7 +98,7 @@ const AppsDetails = () => {
                         <p>Developed by <span className=' text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent ' > {companyName} </span></p>
                     </div>
                 </div>
-                <div className=' md:pl-10 md:w-3/4 flex flex-col justify-between'>
+                <div className=' md:pl-10 w-2/3 md:3/4 flex flex-col justify-between'>
                     <h1 className="text-[32px] font-bold mb-2 w-full hidden md:block ">
                         {title}
                     </h1>
@@ -115,11 +129,12 @@ const AppsDetails = () => {
                     <button
                         onClick={() => handleInstalled(newAppId)}
                         disabled={markedInstalled}
-                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center 
+                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center 
                             ${markedInstalled
                                 ? 'bg-gray-500 cursor-not-allowed'
                                 : 'bg-[#00D390]'
-                            } `}>
+                            } `} 
+                             >
                         {
                             markedInstalled
                                 ? `Installed`

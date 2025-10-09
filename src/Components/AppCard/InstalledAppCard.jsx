@@ -3,6 +3,7 @@ import dwnldicon from '../../assets/icon-downloads.png'
 import star from '../../assets/icon-ratings.png'
 import { uninstallApp } from '../../utilities/addToLS';
 import uninstallicon from '../../assets/uninstall.png'
+import { Bounce, toast } from 'react-toastify';
 
 const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
     const { image, title, size, downloads, ratingAvg, id } = installedApp
@@ -10,6 +11,21 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
     const handleUninstall = (appId) => {
         uninstallApp(appId)
         setInstalledApps(prev => prev.filter(p => p.id !== appId))
+
+        toast.success(`${title} uninstalled successfully`, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+
+            
+        });
+
     }
 
     const formatNumber = (num) => {
@@ -52,11 +68,12 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
             <div className='hidden sm:block'>
                 <button
                     onClick={() => handleUninstall(id)}
-                    className="text-white gap-2 px-8 py-3 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px]  text-center bg-[#00D390]">
+                    className="text-white gap-2 px-8 py-3 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px]  text-center bg-[#00D390] ">
                     Unsinstall
                 </button>
 
             </div>
+
         </div>
     );
 };

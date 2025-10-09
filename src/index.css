@@ -25,32 +25,3 @@ body {
 
   display: inline-block;
 }
-
-/* @keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-.animate-slideIn {
-  animation: slideIn 1s ease =-out forwards;
-} */
-
-/* @theme {
-  --animate-rise-in: rise 5s ease-out;
-
-  @-keyframes rise {
-    0% {
-      transform: translateY(30px);
-      opacity: 0.2s;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-} */
