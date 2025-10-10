@@ -6,7 +6,7 @@ import AppError from './ErrorPages/AppError';
 
 const AppsPage = () => {
 
-    const { apps, loading } = useAppsData();
+    const { apps, loading, error } = useAppsData();
     const [search, setSearch] = useState("");
     const [searchedApps, setSearchedApps] = useState([]);
     const [searchLoading, setSearchLoading] = useState(false);
@@ -28,7 +28,9 @@ const AppsPage = () => {
         return () => clearTimeout(timer);
     }, [search, apps])
 
-
+if (error) {
+        return <NoApp message="NO DATA FOUND" />
+    }
 
     return (
         <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 animate-fade-up-scale5s ' >
@@ -71,7 +73,7 @@ const AppsPage = () => {
                     : searchedApps.length === 0 ?
                         (<AppError className={`animate-rise`} />)
                         : (
-                            <div className='Apps-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ' >
+                            <div className='Apps-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-0 ' >
                                 {
                                     searchedApps.map(app => <AppCard key={app.id} app={app} ></AppCard>)
                                 }

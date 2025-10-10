@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
-
-const NoApp = () => {
+// No Installed App Found..!!
+const NoApp = ({message = "An Error Occurred"}) => {
     return (
         <div className=' flex flex-col justify-center items-center text-center my-20'>
             <h1 className=' text-[#001931] text-5xl md:text-7xl font-bold mb-4 animate-fade-in-scale opacity-80 ' >
-                No Installed App Found..!!
+                {message}
             </h1>
             <p className=' text-xl text-[#627382] text-center my-10 '>Install to Explore our App</p>
 

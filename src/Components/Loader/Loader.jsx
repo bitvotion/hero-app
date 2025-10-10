@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/loader.png'
 
 const Loader = () => {
     return (
         <div className=' max-w-[1536px] mx-auto flex items-center justify-center' >
             <div>
-                <h1 className=' text-9xl font-extrabold flex gap-6 font-bold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent' >
+                <h1 className=' text-9xl font-extrabold flex gap-6 bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent' >
                     L<span>
                         <img 
                         src={logo} 

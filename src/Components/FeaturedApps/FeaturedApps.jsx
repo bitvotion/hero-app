@@ -5,7 +5,6 @@ import { Link } from 'react-router';
 import Loader from '../Loader/Loader';
 
 
-
 const FeaturedApps = () => {
 
     const { apps, loading } = useAppsData();
@@ -24,11 +23,18 @@ const FeaturedApps = () => {
 
             <p className=' text-xl text-[#627382] text-center mb-10 '>Explore All Trending Apps on the Market developed by us</p>
 
-            <div className='Apps-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ' >
-                {
-                    featuredApps.map(app => <AppCard key={app.id} app={app} ></AppCard>)
-                }
-            </div>
+            {
+                loading ? (
+                    <Loader />
+                )
+                    : (
+                        <div className='Apps-card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 ' >
+                            {
+                                featuredApps.map(app => <AppCard key={app.id} app={app} ></AppCard>)
+                            }
+                        </div>
+                    )
+            }
             <div className=' mt-10 flex items-center justify-center ' >
                 <Link to='/apps'>
 

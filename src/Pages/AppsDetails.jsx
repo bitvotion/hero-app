@@ -16,6 +16,7 @@ import {
 import Loader from '../Components/Loader/Loader';
 import { getInstalledApps, installIntoLS } from '../utilities/addToLS';
 import { Bounce, toast } from 'react-toastify';
+import NoApp from '../Components/NoApp/NoApp';
 
 
 const AppsDetails = () => {
@@ -35,10 +36,6 @@ const AppsDetails = () => {
         }
 
     }, [newAppId])
-
-    if (loading) {
-        return <Loader />
-    }
 
 
     const app = apps.find(a => a.id === newAppId);
@@ -79,6 +76,14 @@ const AppsDetails = () => {
             return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
         }
         return num;
+    }
+
+    if (loading) {
+        return <Loader />
+    }
+
+    if (error) {
+        return <NoApp message="NO DATA FOUND" />
     }
 
 
@@ -169,7 +174,7 @@ const AppsDetails = () => {
                         className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center hidden md:block
                             ${markedInstalled
                                 ? 'bg-gray-400 cursor-not-allowed '
-                                : 'bg-[#00D390] hover:scale-105 '
+                                : 'bg-[#00D390] hover:scale-105 skeleton '
                             } `}
                     >
                         {

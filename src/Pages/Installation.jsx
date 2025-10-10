@@ -7,7 +7,7 @@ import NoApp from '../Components/NoApp/NoApp';
 
 const Installation = () => {
 
-    const { apps, loading } = useAppsData();
+    const { apps, loading, error } = useAppsData();
     const [installedApps, setInstalledApps] = useState([]);
     const [sortOrder, setSortOrder] = useState('none');
 
@@ -20,9 +20,9 @@ const Installation = () => {
 
     const sortedItem = (() => {
         if (sortOrder === 'download-asc') {
-            return [...installedApps].sort((a,b) => a.downloads - b.downloads)
+            return [...installedApps].sort((a, b) => a.downloads - b.downloads)
         } else if (sortOrder === "download-desc") {
-            return [...installedApps].sort((a,b) => b.downloads - a.downloads)
+            return [...installedApps].sort((a, b) => b.downloads - a.downloads)
         } else {
             return installedApps
         }
@@ -32,7 +32,9 @@ const Installation = () => {
         return <Loader />
     }
 
-
+    if (error) {
+        return <NoApp message="NO DATA FOUND" />
+    }
 
 
     return (
@@ -51,10 +53,10 @@ const Installation = () => {
                     }
                 </h2>
                 <label className='form-control w-full max-w-xs'>
-                    <select 
-                    className="select select-bordered" 
-                    value={sortOrder}
-                    onChange={e => setSortOrder(e.target.value)}>
+                    <select
+                        className="select select-bordered"
+                        value={sortOrder}
+                        onChange={e => setSortOrder(e.target.value)}>
                         <option value="none">Sort by downloads</option>
                         <option value="download-asc">Low to High</option>
                         <option value="download.desc">High to Low</option>
@@ -62,11 +64,11 @@ const Installation = () => {
 
                 </label>
             </div>
-            <div>
+            <div className=' px-2 ' >
                 {
                     !sortedItem.length
-                    ? <NoApp />
-                    : sortedItem.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
+                        ? <NoApp message="No Installed App Found..!!" />
+                        : sortedItem.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
                 }
             </div>
         </div>

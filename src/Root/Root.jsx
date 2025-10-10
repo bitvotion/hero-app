@@ -4,6 +4,7 @@ import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
 import { Bounce, ToastContainer } from 'react-toastify';
 import ScrollToTop from '../utilities/ScrollToTop';
+import BottomMenu from '../Components/BottomMenu/BottomMenu';
 
 const Root = () => {
 
@@ -23,6 +24,7 @@ const Root = () => {
                 <Outlet />
             </div>
             <Footer />
+            <BottomMenu />
             {/* Toast */}
             <ToastContainer
                 position="top-center"
