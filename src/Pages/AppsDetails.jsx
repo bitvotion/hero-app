@@ -37,6 +37,13 @@ const AppsDetails = () => {
 
     }, [newAppId])
 
+    if (loading) {
+        return <Loader />
+    }
+    if (error) {
+        return <NoApp />
+    }
+
 
     const app = apps.find(a => a.id === newAppId);
 
@@ -76,14 +83,6 @@ const AppsDetails = () => {
             return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
         }
         return num;
-    }
-
-    if (loading) {
-        return <Loader />
-    }
-
-    if (error) {
-        return <NoApp message="NO DATA FOUND" />
     }
 
 
