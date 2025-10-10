@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import useAppsData from '../Hooks/useAppsData';
 import { getInstalledApps } from '../utilities/addToLS';
 import Loader from '../Components/Loader/Loader';
@@ -12,21 +12,23 @@ const Installation = () => {
     const [sortOrder, setSortOrder] = useState('none');
 
     useEffect(() => {
-        const installedAppsId = getInstalledApps()
-        const newInstalledApps = apps.filter(app => installedAppsId.includes(app.id))
+        const installedAppsId = getInstalledApps();
+        const newInstalledApps = apps.filter(app => installedAppsId.includes(app.id));
 
-        setInstalledApps(newInstalledApps)
+        setInstalledApps(newInstalledApps);
     }, [apps])
 
-    const sortedItem = (() => {
+    const sortedApps = useMemo(() => {
+        let sorted = [...installedApps];
+
         if (sortOrder === 'download-asc') {
-            return [...installedApps].sort((a, b) => a.downloads - b.downloads)
-        } else if (sortOrder === "download-desc") {
-            return [...installedApps].sort((a, b) => b.downloads - a.downloads)
-        } else {
-            return installedApps
-        }
-    })()
+            sorted.sort((a, b) => Number(a.downloads) - Number(b.downloads))
+        } else if (sortOrder === 'download-desc') {
+            sorted.sort((a, b) => Number(b.downloads) - Number(a.downloads))
+        } 
+
+        return sorted;
+    },[installedApps, sortOrder])
 
     if (loading) {
         return <Loader />
@@ -36,7 +38,7 @@ const Installation = () => {
         return <NoApp message="NO DATA FOUND" />
     }
 
-
+console.log(sortedApps.map(a => a.downloads));
     return (
         <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 animate-fade-up-scale5s '>
             <div>
@@ -59,16 +61,16 @@ const Installation = () => {
                         onChange={e => setSortOrder(e.target.value)}>
                         <option value="none">Sort by downloads</option>
                         <option value="download-asc">Low to High</option>
-                        <option value="download.desc">High to Low</option>
+                        <option value="download-desc">High to Low</option>
                     </select>
 
                 </label>
             </div>
             <div className=' px-2 ' >
                 {
-                    !sortedItem.length
+                    !sortedApps.length
                         ? <NoApp message="No Installed App Found..!!" />
-                        : sortedItem.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
+                        : sortedApps.map(installedApp => <InstalledAppCard key={installedApp.id} installedApp={installedApp} setInstalledApps={setInstalledApps}  ></InstalledAppCard>)
                 }
             </div>
         </div>
