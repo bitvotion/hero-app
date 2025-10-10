@@ -2,13 +2,14 @@ import React from 'react';
 import logo from '../../assets/logo.png'
 import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { IoLogoGithub } from 'react-icons/io';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
         <div className='bg-white' >
             <div className=' max-w-[1536px] mx-auto px-2 sm:px-4 md:px-5 lg:px-8 '>
-                <div className='relative flex items-center flex-col-reverse md:flex-row justify-around py-10 ' >
-                    <div>
+                <div className='relative flex items-center flex-col-reverse lg:flex-row justify-around py-10 ' >
+                    <div className='pt-20 lg:pt-0' >
                         <fieldset className="w-80">
                             <label className=' text-gray-800 ' >Join As Developer</label>
                             <div className="join">
@@ -20,11 +21,11 @@ const Footer = () => {
                             </div>
                         </fieldset>
                     </div>
-                    <div className='absolute mt-10 md:mt-0 w-4/5 md:w-0 md:h-4/5 border border-gray-100 ' ></div>
+                    <div className='absolute mt-10 lg:mt-0 w-4/5 lg:w-0 lg:h-4/5 border border-gray-100 ' ></div>
                     <div className=' flex items-center gap-6 mb-10 md:mb-0 ' >
                         <img
                             src={logo}
-                            className=' h-25 '
+                            className=' h-16 md:h-20 lg:h-25 '
                         />
                         <h2 className='text-5xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent '>BitVotion.IO</h2>
                     </div>
@@ -77,7 +78,7 @@ const Footer = () => {
                         <li className=' hover:text-gray-900 cursor-pointer ' >Privacy</li>
                         <li className=' hover:text-gray-900 cursor-pointer ' >About</li>
                         <li className=' hover:text-gray-900 cursor-pointer ' >Developers</li>
-                        <li className=' hover:text-gray-900 cursor-pointer ' >Hero App Store</li>
+                        <li className=' hover:text-gray-900 cursor-pointer ' ><Link to="/apps" >Hero App Store</Link></li>
                     </ul>
                     <p className=' hover:text-gray-900 cursor-pointer ' >United States (English) </p>
                 </div>

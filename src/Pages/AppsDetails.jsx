@@ -28,7 +28,6 @@ const AppsDetails = () => {
     const { apps, loading, error } = useAppsData();
 
     useEffect(() => {
-
         const installed = getInstalledApps();
 
         if (installed.includes(newAppId)) {
@@ -46,13 +45,9 @@ const AppsDetails = () => {
 
 
     const app = apps.find(a => a.id === newAppId);
-
     const { image, title, companyName, description, size, reviews, ratingAvg, downloads, ratings } = app;
 
-
-
     const handleInstalled = (id) => {
-
         const installed = installIntoLS(id);
 
         if (installed) {
@@ -170,7 +165,7 @@ const AppsDetails = () => {
                             handleInstalled(newAppId)
                         }}
                         disabled={markedInstalled}
-                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center hidden md:block
+                        className={`text-white gap-2 px-5 py-3 rounded-sm border-none transition-all duration-150 ease-in-out text-xl active:shadow-inner active:translate-y-[2px] w-60 text-center hidden sm:block
                             ${markedInstalled
                                 ? 'bg-gray-400 cursor-not-allowed '
                                 : 'bg-[#00D390] hover:scale-105 skeleton '

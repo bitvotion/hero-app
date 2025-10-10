@@ -57,7 +57,7 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
                         <div className='flex font-medium gap-4 sm:gap-10'>
                             <p className='flex items-center gap-2 text-[#00D390] ' ><span><img src={dwnldicon} className='w-6 h-6' /> </span> {formatNumber(downloads)}</p>
                             <p className='flex items-center gap-2 text-[#FF8811] '><span><img src={star} className='w-6 h-6' /> </span> {ratingAvg} </p>
-                            <p>{size} MB</p>
+                            <p className='text-gray-600'>{size} MB</p>
                         </div>
                     </div>
                     <div>
@@ -80,7 +80,7 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
                             handleUninstall(id)
                         }}
                         className="text-white gap-2 px-8 py-3 rounded-sm border-none transition-all duration-150 ease-in-out  hover:scale-105 relative text-xl active:shadow-inner active:translate-y-[2px]  text-center bg-[#00D390] ">
-                        Unsinstall
+                        Uninstall
                     </button>
 
                 </div>
