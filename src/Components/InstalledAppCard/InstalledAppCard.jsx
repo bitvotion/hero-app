@@ -67,7 +67,7 @@ const InstalledAppCard = ({ installedApp, setInstalledApps }) => {
                                 e.preventDefault();
                                 handleUninstall(id)
                             }}
-                            className="btn border-none py-8 px-3 bg-[#00D390]  ">
+                            className="btn border-none py-8 px-3 bg-[#00D390] sm:hidden  ">
                             <MdDeleteForever className=' text-4xl text-white ' />
                         </button>
                     </div>
